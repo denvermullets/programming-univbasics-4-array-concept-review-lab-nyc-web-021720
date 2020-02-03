@@ -31,12 +31,10 @@ def find_min_value(array)
   minNum = 0
   
   array.length.times do | index |
-    if array[index] == 0
-      minNum = array
-    else if array[index] < minNum
+    if array[index] < minNum
       minNum = array[index]
     end
+  end
   
   minNum
-  
 end
