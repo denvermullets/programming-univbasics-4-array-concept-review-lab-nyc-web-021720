@@ -32,7 +32,7 @@ def find_min_value(array)
   
   array.length.times do | index |
     if array[index] == 0
-      minNum = 0
+      minNum = array
     else if array[index] < minNum
       minNum = array[index]
     end
